@@ -20,13 +20,36 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 40px;
+      min-height: 40px;
     }
 
     .hashtags {
       font-size: 9px;
       font-weight: bold;
+      text-align: right;
       white-space: nowrap;
+    }
+
+    .hashtags span {
+      display: inline;
+    }
+
+    /* Smartphones und kleine Tablets */
+    @media (max-width: 768px) {
+      .textbox {
+        align-items: flex-start;
+      }
+
+      .hashtags {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2;
+        white-space: normal;
+      }
+
+      .hashtags span {
+        display: block;
+      }
     }
   </style>
 </head>
@@ -34,7 +57,11 @@
 
   <div class="textbox">
     <div>© 2026 Marcel Melzer - An- und Verkauf - Sunny's Schätze</div>
-    <div class="hashtags">#SunnysSchätze #SunnysSchätzeRiesa</div>
+
+    <div class="hashtags">
+      <span>#SunnysSchätze</span>
+      <span>#SunnysSchätzeRiesa</span>
+    </div>
   </div>
 
 </body>
