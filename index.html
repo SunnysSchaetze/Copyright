@@ -13,7 +13,6 @@
       background-color: #ff7f00;
       color: white;
       font-family: Arial, sans-serif;
-      font-size: 13px;
       padding: 10px;
       width: 100%;
       box-sizing: border-box;
@@ -21,6 +20,10 @@
       align-items: center;
       justify-content: space-between;
       min-height: 40px;
+    }
+
+    .copyright {
+      font-size: 9px;
     }
 
     .hashtags {
@@ -34,17 +37,14 @@
       display: inline;
     }
 
-    /* Smartphones und kleine Tablets */
+    /* Mobile Ansicht */
     @media (max-width: 768px) {
-      .textbox {
-        align-items: flex-start;
-      }
-
       .hashtags {
         display: flex;
         flex-direction: column;
-        line-height: 1.2;
+        align-items: flex-end;
         white-space: normal;
+        line-height: 1.2;
       }
 
       .hashtags span {
@@ -56,7 +56,9 @@
 <body>
 
   <div class="textbox">
-    <div>© 2026 Marcel Melzer - An- und Verkauf - Sunny's Schätze</div>
+    <div class="copyright">
+      © 2026 Marcel Melzer - An- und Verkauf - Sunny's Schätze
+    </div>
 
     <div class="hashtags">
       <span>#SunnysSchätze</span>
